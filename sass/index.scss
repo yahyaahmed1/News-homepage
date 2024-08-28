@@ -1,0 +1,136 @@
+// sass --watch ./sass/index.scss ./css/index.css
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+@import "_variables.scss";
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: $Off-white;
+}
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+	background-color: $Off-white !important;
+}
+.navbar-expand-lg .navbar-collapse {
+	justify-content: right;
+	font-size: 14px;
+	ul li {
+		margin-left: 15px;
+		color: $Very-dark-blue;
+		text-align: center;
+
+		&:hover a {
+			color: $Soft-red;
+		}
+	}
+}
+button.navbar-toggler {
+	border: none;
+	&:focus {
+		box-shadow: none;
+	}
+}
+h1.title {
+	font-size: 2.8em;
+	line-height: 1;
+	font-weight: 700;
+	color: $Very-dark-blue;
+}
+p.disc {
+	font-size: 13px;
+	color: $Dark-grayish-blue;
+}
+button.btn {
+	letter-spacing: 4px;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 10px 20px;
+	background-color: $Soft-red;
+	color: $Very-dark-blue;
+	border-radius: 0;
+	transition: all 0.5s;
+	&:hover {
+		background-color: $Very-dark-blue;
+		color: $Off-white;
+	}
+}
+.new-part {
+	background-color: $Very-dark-blue;
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	@media (max-width: 991px) {
+		margin-top: 50px;
+		height: auto;
+		display: block;
+	}
+	h2 {
+		color: $Soft-orange;
+		margin-bottom: 15px;
+	}
+	.new-item {
+		a {
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: 700;
+			color: $Off-white;
+			transition: all 0.2s;
+			&:hover {
+				color: $Soft-orange;
+			}
+		}
+		p {
+			font-size: 14px;
+			font-weight: 500;
+			margin-top: 7px;
+			color: $Dark-grayish-blue;
+		}
+	}
+}
+.card {
+	border: none;
+	img {
+		width: 125px;
+	}
+	.card-body {
+		padding: 0 0 0 20px;
+	}
+	.card-num {
+		font-weight: 700;
+		color: $Soft-red;
+	}
+	.card-title {
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 900;
+		transition: all 0.2s;
+		&:hover {
+			color: $Soft-red;
+		}
+	}
+	.card-text {
+		font-size: 12px;
+		margin-top: 7px;
+		color: $Dark-grayish-blue;
+	}
+}
+.img-container {
+	@media (max-width: 991px) {
+		width: 25%;
+	}
+}
+.details-container {
+	@media (max-width: 991px) {
+		width: 75%;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}

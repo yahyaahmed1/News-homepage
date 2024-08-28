@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: hsl(36, 100%, 99%);
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  background-color: hsl(36, 100%, 99%) !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: right;
+  font-size: 14px;
+}
+.navbar-expand-lg .navbar-collapse ul li {
+  margin-left: 15px;
+  color: hsl(240, 100%, 5%);
+  text-align: center;
+}
+.navbar-expand-lg .navbar-collapse ul li:hover a {
+  color: hsl(5, 85%, 63%);
+}
+
+button.navbar-toggler {
+  border: none;
+}
+button.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+h1.title {
+  font-size: 2.8em;
+  line-height: 1;
+  font-weight: 700;
+  color: hsl(240, 100%, 5%);
+}
+
+p.disc {
+  font-size: 13px;
+  color: hsl(236, 13%, 42%);
+}
+
+button.btn {
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(240, 100%, 5%);
+  border-radius: 0;
+  transition: all 0.5s;
+}
+button.btn:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.new-part {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .new-part {
+    margin-top: 50px;
+    height: auto;
+    display: block;
+  }
+}
+.new-part h2 {
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 15px;
+}
+.new-part .new-item a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(36, 100%, 99%);
+  transition: all 0.2s;
+}
+.new-part .new-item a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.new-part .new-item p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 7px;
+  color: hsl(236, 13%, 42%);
+}
+
+.card {
+  border: none;
+}
+.card img {
+  width: 125px;
+}
+.card .card-body {
+  padding: 0 0 0 20px;
+}
+.card .card-num {
+  font-weight: 700;
+  color: hsl(5, 85%, 63%);
+}
+.card .card-title {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+  transition: all 0.2s;
+}
+.card .card-title:hover {
+  color: hsl(5, 85%, 63%);
+}
+.card .card-text {
+  font-size: 12px;
+  margin-top: 7px;
+  color: hsl(236, 13%, 42%);
+}
+
+@media (max-width: 991px) {
+  .img-container {
+    width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  .details-container {
+    width: 75%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=index.css.map */
